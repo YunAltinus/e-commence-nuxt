@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import SideBar from "~/components/Home/SideBar";
+import SideBar from "~/components/SideBar";
 import ProductList from "~/components/Home/ProductList";
 
 export default {
