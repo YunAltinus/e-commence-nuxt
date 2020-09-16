@@ -32,7 +32,7 @@ export default {};
     transition: all 0.2s;
     &:hover,
     &:active {
-      box-shadow: 0 0 2px #014aa3;
+      box-shadow: 0 0 3px #014aa3;
     }
     :first-child {
       color: #122e50;
