@@ -89,9 +89,8 @@ body {
 }
 
 @media all and (max-width: 991px) {
-  #productList {
-    justify-content: center !important;
-    #ListCard {
+  #product-list {
+    #list-card {
       max-width: 100% !important;
     }
   }
