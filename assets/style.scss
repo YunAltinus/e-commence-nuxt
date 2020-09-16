@@ -6,11 +6,30 @@
   margin: 0;
   box-sizing: border-box;
   list-style-type: none;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 body {
   font-family: "Merriweather", serif;
+}
+
+.btn {
+  border: 1px solid #014aa3;
+  transition: all 0.2s;
+  color: #014aa3;
+
+  .n-link {
+    color: #014aa3 !important;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #003c86;
+    background-color: #003c86;
+    .n-link {
+      color: #fff !important;
+    }
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -84,6 +103,28 @@ body {
       flex-direction: column;
       text-align: center;
       margin: 0;
+    }
+  }
+
+  // Product
+  #product-container {
+    margin-top: 100px;
+
+    .main-container {
+      .product-content {
+        .top-area {
+          flex-direction: column !important;
+          .img-area {
+            width: 100%;
+            .full-size-image {
+              .small-size-images-area {
+                flex-wrap: nowrap;
+                border: 1px solid peru;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
