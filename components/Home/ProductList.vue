@@ -11,7 +11,9 @@
       >
         <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
 
-        <button href="#" class="btn">Go somewhere</button>
+        <button class="btn">
+          <nuxt-link class="n-link" to="/products/:id" tag="a">Go somewhere</nuxt-link>
+        </button>
       </b-card>
     </div>
   </div>
@@ -36,18 +38,6 @@ export default {};
     }
     :first-child {
       color: #122e50;
-    }
-  }
-
-  .btn {
-    color: #003679;
-    border: 1px solid #014aa3;
-    transition: all 0.2s;
-    &:hover,
-    &:focus {
-      color: #fff;
-      border: 1px solid #003679;
-      background-color: #003679;
     }
   }
 }
