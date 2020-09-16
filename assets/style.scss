@@ -1,0 +1,98 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+@media all and (max-width: 768px) {
+  .shrink {
+    padding: 10px 25px 0 25px !important;
+  }
+  header {
+    padding: 10px 25px 0 25px !important;
+    margin: 0 !important;
+    label #sing-one {
+      display: block !important;
+    }
+
+    nav {
+      label #sing-one,
+      label #sing-two {
+        margin-top: 1px;
+      }
+      #res-menu:checked ~ ul {
+        left: 0 !important;
+      }
+      #res-menu:checked ~ label #sing-one {
+        display: none !important;
+      }
+      #res-menu:checked ~ label #sing-two {
+        display: block !important;
+      }
+
+      ul {
+        padding-top: 20px !important;
+        margin-top: -15px;
+        background-color: #122e50;
+        position: fixed;
+        width: 100%;
+        top: 50px;
+        left: -100% !important;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: -1;
+
+        li {
+          display: block !important;
+          margin: 10px 0 !important;
+          padding-top: 5px !important;
+          .n-link {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .div-btn {
+      margin-top: 5px !important;
+    }
+
+    #mobile-icon {
+      display: block;
+    }
+  }
+
+  #container {
+    margin-top: 100px;
+    #sidebar-list {
+      margin: 0;
+    }
+  }
+  footer {
+    text-align: center;
+
+    #yunaltinus {
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  #productList {
+    justify-content: center !important;
+    #ListCard {
+      max-width: 100% !important;
+    }
+  }
+}
