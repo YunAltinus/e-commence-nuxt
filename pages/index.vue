@@ -1,12 +1,12 @@
 <template>
   <b-container id="container">
     <b-row>
-      <b-col md="4">
-        <SideBar class="mt-2" />
-      </b-col>
       <b-col class="con-div">
         <h2 class="text-center mt-4 mt-md-0">YENİ ÜRÜNLER</h2>
         <ProductList />
+      </b-col>
+      <b-col md="3">
+        <SideBar class="mt-2" />
       </b-col>
     </b-row>
   </b-container>
@@ -30,7 +30,7 @@ export default {
   .con-div {
     text-align: center;
     h2 {
-      color: #122E50;
+      color: #122e50;
     }
   }
 }
