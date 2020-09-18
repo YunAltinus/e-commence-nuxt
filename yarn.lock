@@ -1353,7 +1353,7 @@
     webpack-node-externals "^2.5.2"
     webpackbar "^4.0.0"
 
-"@nuxtjs/axios@^5.3.6":
+"@nuxtjs/axios@^5.12.2":
   version "5.12.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.12.2.tgz#ff0d15ba5d3442dcbd12245f864effec3bea3cde"
   integrity sha512-MKSuwHRgLTw1tMS1mDf+7XIvQLvF8GlK3rtuJY4lNmZVxYiBYhG3Nd6OrtH07fljNmvL7/JIUzk+1o/tVS6Pkg==
@@ -6846,7 +6846,7 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt@^2.0.0:
+nuxt@^2.14.5:
   version "2.14.5"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.14.5.tgz#d4da8ed7dd03cf199cf3981637377ab1fe682187"
   integrity sha512-VAOlQNfDdxxCdrkOAWO5ErkvhMAZHdRJVMWH+gwjIWT+yh9uAXoFxm/WZcxCnJ6jEoUgvOZ6/DFKC01T96+0pg==
