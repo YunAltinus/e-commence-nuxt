@@ -1,11 +1,11 @@
 <template>
   <b-container id="product-container">
     <b-row>
-      <b-col lg="3" class="mb-3">
-        <SideBar class="mt-2" />
-      </b-col>
       <b-col class="text-center">
         <Product />
+      </b-col>
+      <b-col lg="3" class="mb-3">
+        <SideBar class="mt-2" />
       </b-col>
     </b-row>
   </b-container>
