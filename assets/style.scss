@@ -14,8 +14,8 @@ body {
 }
 
 .btn {
-  border: 1px solid #014aa3;
-  transition: all 0.2s;
+  border: 1px solid #014aa3 !important;
+  transition: all 0.2s !important;
   color: #014aa3;
 
   .n-link {
@@ -24,13 +24,31 @@ body {
 
   &:hover,
   &:focus {
-    border: 1px solid #003c86;
-    background-color: #003c86;
+    border: 1px solid #003c86 !important;
+    background-color: #003c86 !important;
     color: #fff !important;
 
     .n-link {
       color: #fff !important;
     }
+  }
+}
+
+.n-btn {
+  text-transform: uppercase !important;
+  color: #96d7ff !important;
+  background-color: transparent !important;
+  border: 1px solid #96d7ff !important;
+  border-radius: 5px !important;
+  transition: all 0.2s !important;
+
+  &:hover {
+    color: #014aa3 !important;
+    border-color: #96d7ff !important;
+    background-color: #fff !important;
+    box-shadow: 1px 0 10px #96d7ff !important;
+    text-shadow: 1px 0 15px #96d7ff !important;
+    font-size: 16.1px !important;
   }
 }
 
