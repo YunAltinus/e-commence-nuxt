@@ -19,16 +19,27 @@
       </ul>
     </nav>
     <div class="div-btn">
-      <button class="n-btn btn">
-        Çıkış
-        <nuxt-link to="/" tag="a"></nuxt-link>
-      </button>
+      <b-dropdown :text="this.$store.state.name" v-if="this.$store.state.email" size="sm" class="ml-auto" right>
+        <b-dropdown-item href="#">Profile</b-dropdown-item>
+        <b-dropdown-item @click="logoutUser">Logout</b-dropdown-item>
+      </b-dropdown>
+      <FormInLogin v-else />
     </div>
   </header>
 </template>
 
 <script>
+import FormInLogin from "~/components/FormInLogin";
+
 export default {
+  components: {
+    FormInLogin
+  },
+  methods:{
+    logoutUser() {
+      this.$store.dispatch("logoutUser")  
+    }
+  },
   mounted() {
     this.$nextTick(function() {
       window.addEventListener("scroll", function() {
@@ -103,24 +114,6 @@ header {
     margin-top: 17px;
     margin-left: auto;
     max-height: 50px;
-
-    .n-btn {
-      text-transform: uppercase;
-      color: #96d7ff;
-      background-color: transparent;
-      border: 1px solid #96d7ff;
-      border-radius: 5px;
-      transition: all 0.2s;
-
-      &:hover {
-        color: #014aa3 !important;
-        border-color: #96d7ff !important;
-        background-color: #fff !important;
-        box-shadow: 1px 0 10px #96d7ff !important;
-        text-shadow: 1px 0 15px #96d7ff !important;
-        font-size: 16.1px;
-      }
-    }
   }
 }
 
