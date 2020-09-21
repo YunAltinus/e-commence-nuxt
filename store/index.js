@@ -1,3 +1,4 @@
+// @ts-nocheck
 const jwt_decode = require("jwt-decode");
 const Cookie = require("js-cookie");
 
